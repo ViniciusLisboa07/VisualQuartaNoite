@@ -10,6 +10,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app-routing.module";
@@ -18,6 +19,7 @@ import { AppComponent } from "./app.component";
 import { TemplateComponent } from "./components/template/template.component";
 import { CadastrarProdutoComponent } from "./components/views/produto/cadastrar-produto/cadastrar-produto.component";
 import { ListarProdutoComponent } from "./components/views/produto/listar-produto/listar-produto.component";
+import { INDEXComponent } from './components/views/HOME/index/index.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +27,7 @@ import { ListarProdutoComponent } from "./components/views/produto/listar-produt
         ListarProdutoComponent,
         CadastrarProdutoComponent,
         TemplateComponent,
+        INDEXComponent,
     ],
     imports: [
         BrowserModule,
@@ -41,6 +44,7 @@ import { ListarProdutoComponent } from "./components/views/produto/listar-produt
         MatCardModule,
         MatSelectModule,
         MatInputModule,
+        MatGridListModule
     ],
     providers: [],
     bootstrap: [AppComponent],
