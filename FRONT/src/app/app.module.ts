@@ -19,7 +19,8 @@ import { AppComponent } from "./app.component";
 import { TemplateComponent } from "./components/template/template.component";
 import { CadastrarProdutoComponent } from "./components/views/produto/cadastrar-produto/cadastrar-produto.component";
 import { ListarProdutoComponent } from "./components/views/produto/listar-produto/listar-produto.component";
-import { INDEXComponent } from './components/views/HOME/index/index.component';
+import { IndexComponent } from "./components/views/home/index/index.component";
+import { CarrinhoComponent } from "./components/views/home/carrinho/carrinho.component";
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { INDEXComponent } from './components/views/HOME/index/index.component';
         ListarProdutoComponent,
         CadastrarProdutoComponent,
         TemplateComponent,
-        INDEXComponent,
+        IndexComponent,
+        CarrinhoComponent,
     ],
     imports: [
         BrowserModule,
@@ -44,7 +46,7 @@ import { INDEXComponent } from './components/views/HOME/index/index.component';
         MatCardModule,
         MatSelectModule,
         MatInputModule,
-        MatGridListModule
+        MatGridListModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

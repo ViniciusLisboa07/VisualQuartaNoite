@@ -1,13 +1,18 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { INDEXComponent } from "./components/views/HOME/index/index.component";
+import { CarrinhoComponent } from "./components/views/home/carrinho/carrinho.component";
+import { IndexComponent } from "./components/views/home/index/index.component";
 import { CadastrarProdutoComponent } from "./components/views/produto/cadastrar-produto/cadastrar-produto.component";
 import { ListarProdutoComponent } from "./components/views/produto/listar-produto/listar-produto.component";
 
 const routes: Routes = [
     {
         path: "",
-        component: INDEXComponent,
+        component: IndexComponent,
+    },
+    {
+        path: "home/carrinho",
+        component: CarrinhoComponent,
     },
     {
         path: "produto/listar",
